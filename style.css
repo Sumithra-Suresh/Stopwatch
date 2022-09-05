@@ -1,0 +1,72 @@
+/*=======================================================================================*/
+/*                                  Global                                               */
+/*=======================================================================================*/
+
+:root {
+    /* Color Variables */
+    --black: #000000;
+    --blackBean:#3D0400;
+    --cadetBlueCrayola:#b0b5be;
+    --davisGrey:#4d4d4d;
+    --green:#00FF00;
+    --red:#F51000;
+    --stateGreen:#023C25;
+    --white: #ffffff;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html{    
+    font-family: sans-serif, monospace, serif;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+li{
+    list-style: none;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    border-bottom:0.1px solid var(--cadetBlueCrayola);
+    padding-bottom: 15px;
+}
+/*=======================================================================================*/
+/*                                  Container                                            */
+/*=======================================================================================*/
+
+.container{
+    width: 450px;
+    height: 100vh;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#display{
+    font-size: 4rem;
+}
+
+.buttons{
+
+    display: flex;
+    padding: 10px 100px;
+    justify-content: space-between;
+}
+
+.buttons > *{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+#startStopBtn{
+    font-size: 1.1rem;
+    color: var(--green);
+    background-color: var(--stateGreen);
+}
